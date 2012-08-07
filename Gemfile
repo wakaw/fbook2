@@ -11,8 +11,13 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
-
 # gem 'sqlite3'
+
+#gem 'therubyracer'
+#gem 'libv8', '3.3.10.4'
+
+gem 'libv8', '~> 3.11.8'
+gem "therubyracer", '>= 0.11.0beta1', :require => 'v8'
 
 gem 'json'
 
@@ -26,6 +31,8 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+
 end
 
 gem 'jquery-rails'
